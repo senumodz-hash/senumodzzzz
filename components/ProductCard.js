@@ -1,9 +1,9 @@
 export default function ProductCard({ product }) {
-  const whatsappNumber = "94743903048";
-  const whatsappMessage = encodeURIComponent("Hello! I want to order a product from Senu Modz.");
+  const whatsappNumber = "94743903048"
+  const whatsappMessage = encodeURIComponent("Hello! I want to order a product from Senu Modz.")
 
   return (
-    <div className="product-card">
+    <div className="product-card" data-aos="fade-up">
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.price}</p>
@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         target="_blank"
         className="contact-btn"
       >
-        Contact on WhatsApp
+        WhatsApp
       </a>
     </div>
   )
