@@ -13,18 +13,24 @@ header {
   border-bottom: 1px solid #333;
 }
 
-header a {
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
   color: #f0f0f0;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-header a:hover {
+header nav a:hover {
   color: #25D366;
-}
-
-h1, h2, h3 {
-  margin: 10px 0;
 }
 
 .container {
@@ -59,8 +65,12 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
 .product-card p {
-  margin: 5px 0;
+  margin: 0;
   color: #aaa;
 }
 
