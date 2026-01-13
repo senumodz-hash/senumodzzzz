@@ -2,18 +2,29 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
 header {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: #1c1c1c;
   padding: 20px;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
-h1 {
-  margin: 0;
+header a {
+  color: #f0f0f0;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #25D366;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
 }
 
 .container {
@@ -29,10 +40,10 @@ h1 {
 }
 
 .product-card {
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 10px;
   overflow: hidden;
-  background-color: white;
+  background-color: #1c1c1c;
   text-align: center;
   padding-bottom: 20px;
   transition: transform 0.2s;
@@ -48,16 +59,12 @@ h1 {
   object-fit: cover;
 }
 
-.product-card h3 {
-  margin: 10px 0 5px;
-}
-
 .product-card p {
-  margin: 0;
-  color: #555;
+  margin: 5px 0;
+  color: #aaa;
 }
 
-.whatsapp-btn {
+.contact-btn {
   display: inline-block;
   margin-top: 10px;
   background-color: #25D366;
@@ -68,6 +75,6 @@ h1 {
   font-weight: bold;
 }
 
-.whatsapp-btn:hover {
+.contact-btn:hover {
   background-color: #128C7E;
 }
