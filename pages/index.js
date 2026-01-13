@@ -1,55 +1,17 @@
-const products = [
-  {
-    id: 1,
-    name: "Product 1",
-    price: "LKR 1000",
-    image: "/images/product1.jpg",
-  },
-  {
-    id: 2,
-    name: "Product 2",
-    price: "LKR 1500",
-    image: "/images/product2.jpg",
-  },
-  {
-    id: 3,
-    name: "Product 3",
-    price: "LKR 2000",
-    image: "/images/product3.jpg",
-  },
-];
-
 export default function Home() {
-  const whatsappNumber = "94712345678"; // Replace with your WhatsApp number
-  const whatsappMessage = encodeURIComponent(
-    "Hello! I want to order a product from Senu Modz."
-  );
-
   return (
-    <>
-      <header>
-        <h1>Senu Modz</h1>
-        <p>Your Tech Products Delivered Fast!</p>
-      </header>
-      <div className="container">
-        <h2>Products</h2>
-        <div className="products">
-          {products.map((product) => (
-            <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.price}</p>
-              <a
-                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                target="_blank"
-                className="whatsapp-btn"
-              >
-                Contact on WhatsApp
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
+    <div className="container">
+      <h2>Welcome to Senu Modz</h2>
+      <p>Your one-stop shop for tech products. Explore our range of high-quality products and get in touch via WhatsApp or email!</p>
+      <a
+        href="https://wa.me/94743903048?text=Hello! I want to order a product from Senu Modz."
+        target="_blank"
+        className="contact-btn"
+      >
+        Contact on WhatsApp
+      </a>
+      <br />
+      <a href="mailto:senumodz@gmail.com" className="contact-btn">Email Us</a>
+    </div>
+  )
 }
