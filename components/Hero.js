@@ -16,16 +16,18 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <h2>{text}</h2>
-      <p>Your tech store for automation panels and bots</p>
-      <a
-        href="https://wa.me/94743903048?text=Hello! I want to order a product from Senu Modz."
-        target="_blank"
-        className="contact-btn"
-      >
-        Contact on WhatsApp
-      </a>
-      <a href="mailto:senumodz@gmail.com" className="contact-btn">Email Us</a>
+      <div className="hero-text">
+        <h2>{text}</h2>
+        <p>Your tech store for automation panels and bots</p>
+        <a
+          href="https://wa.me/94743903048?text=Hello! I want to order a product from Senu Modz."
+          target="_blank"
+          className="contact-btn"
+        >
+          WhatsApp
+        </a>
+        <a href="mailto:senumodz@gmail.com" className="contact-btn">Email Us</a>
+      </div>
     </section>
   )
 }
