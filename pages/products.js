@@ -1,10 +1,10 @@
 import ProductCard from '../components/ProductCard'
 
 const products = [
-  { id: 1, name: "Product 1", price: "LKR 1000", image: "/images/product1.jpg" },
-  { id: 2, name: "Product 2", price: "LKR 1500", image: "/images/product2.jpg" },
-  { id: 3, name: "Product 3", price: "LKR 2000", image: "/images/product3.jpg" },
-];
+  { id: 1, name: "Panel A", price: "LKR 1000", image: "/images/product1.jpg" },
+  { id: 2, name: "Panel B", price: "LKR 1500", image: "/images/product2.jpg" },
+  { id: 3, name: "Bot Script", price: "LKR 2000", image: "/images/product3.jpg" },
+]
 
 export default function Products() {
   return (
@@ -16,4 +16,3 @@ export default function Products() {
     </div>
   )
 }
-
